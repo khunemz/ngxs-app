@@ -39,7 +39,7 @@ export class TodoState {
           const state = getState();
           setState({
               ...state,
-              todos: result,
+              todos: result.reverse(),
           });
       }));
   }
